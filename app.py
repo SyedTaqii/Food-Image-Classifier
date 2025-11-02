@@ -13,7 +13,7 @@ def load_model():
     """
     Loads the fine-tuned model and processor from the local directory.
     """
-    model_path = "./vit_final_food_model"
+    model_path = "syedtaqi/food-images-classifier"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
     st.info(f"Loading model onto {device.upper()}... (This only happens once)")
